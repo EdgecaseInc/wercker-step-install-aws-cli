@@ -1,5 +1,5 @@
 name: install-aws-cli
-version: 0.0.1
+version: 0.0.2
 description: Install AWS Command Line Tools
 properties:
   key:
