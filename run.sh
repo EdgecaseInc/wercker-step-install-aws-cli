@@ -40,4 +40,3 @@ if [ -n "$WERCKER_INSTALL_AWS_CLI_REGION" ]; then
 fi
 
 echo 'Done.'
-exit 0
