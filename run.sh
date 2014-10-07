@@ -36,7 +36,7 @@ echo 'Configuring based on parameters...'
 aws configure set aws_access_key_id $WERCKER_INSTALL_AWS_CLI_KEY
 aws configure set aws_access_key_id $WERCKER_INSTALL_AWS_CLI_SECRET
 if [ -n "$WERCKER_INSTALL_AWS_CLI_REGION" ]; then
-  aws configure set default.region WERCKER_INSTALL_AWS_CLI_REGION
+  aws configure set default.region $WERCKER_INSTALL_AWS_CLI_REGION
 fi
 
 echo 'Done.'
