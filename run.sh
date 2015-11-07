@@ -34,7 +34,7 @@ sudo ntpdate ntp.ubuntu.com
 
 echo 'Configuring based on parameters...'
 aws configure set aws_access_key_id $WERCKER_INSTALL_AWS_CLI_KEY
-aws configure set aws_access_key_id $WERCKER_INSTALL_AWS_CLI_SECRET
+aws configure set aws_secret_access_key $WERCKER_INSTALL_AWS_CLI_SECRET
 if [ -n "$WERCKER_INSTALL_AWS_CLI_REGION" ]; then
   aws configure set default.region $WERCKER_INSTALL_AWS_CLI_REGION
 fi
